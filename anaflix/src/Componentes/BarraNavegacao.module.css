@@ -1,7 +1,7 @@
-.container{
+/* .container{
     display: flex;
     justify-content: center;
-    background-color: cadetblue;
+    background-color: #141414;
     padding: 3px;
     color: azure;
     height: 50px;
@@ -13,16 +13,55 @@ ul{
     padding: 0;
     display: flex;
     flex-direction: row;
+    list-style-type: none;
 }
 
 li{
     margin-left: 30px;
-    color: blanchedalmond;
+    color: white;
     font-size: 22px;
 }
 
 li a.active{
-    color: blueviolet;
+    color: red;
     text-decoration: none;
     
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    padding: 10px;
+    color: azure;
+    height: 60px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    color: #f0f0f0;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #d5ad35; /* Cor dourada ao passar o mouse */
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li a.active {
+    color: red;
 }
